@@ -1,15 +1,14 @@
-# 2.0 新的开始	
+> 已同步更新到 Swift 2.1
+
+# 2.0 新的开始
 
 > Swift 兴趣交流群：`131595168`, `146932759`, `151336833`, `153549217`. **加入一个群即可，请勿重复添加**
 
-> <a target='_blank' href="http://swiftist.org">Swift 开发者社区</a>
-
-> <a target='_blank' href="https://github.com/ipader/SwiftGuide">Swift 资源汇总</a>
-
-> <a target='_blank' href="http://swiftsandbox.io">Swift 优秀newsletter</a>
+> <a target='_blank' href="http://swiftweekly.cn">订阅 Swift 开发者周报，每周获取最新 Swift 资源</a>
 
 <!-- -->
 > 如果您觉得这个项目不错，请<a target='_blank' href="https://github.com/numbbbbb/the-swift-programming-language-in-chinese">点击Star一下</a>，您的支持是我们最大的动力。
+
 
 ## 1
 
@@ -25,15 +24,13 @@
 
 我错了。
 
-![](https://raw.githubusercontent.com/numbbbbb/the-swift-programming-language-in-chinese/gh-pages/swift%202.0%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87/1.png)
+![1](https://cloud.githubusercontent.com/assets/1472352/10558349/74eb84de-74fe-11e5-99d2-155dfacff068.png)
+![2](https://cloud.githubusercontent.com/assets/1472352/10558351/79101476-74fe-11e5-82d5-feb815d0b86b.png)
+![3](https://cloud.githubusercontent.com/assets/1472352/10558353/7c983272-74fe-11e5-8397-97c5176261ca.png)
+![4](https://cloud.githubusercontent.com/assets/1472352/10558354/7cd63ae0-74fe-11e5-9b9d-1d7ec6516319.png)
+![5](https://cloud.githubusercontent.com/assets/1472352/10558358/7fe50914-74fe-11e5-9b2b-a7b9129ea638.png)
+![6](https://cloud.githubusercontent.com/assets/1472352/10558360/83a8b064-74fe-11e5-9c2f-2e79d3309f62.png)
 
-![](https://raw.githubusercontent.com/numbbbbb/the-swift-programming-language-in-chinese/gh-pages/swift%202.0%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87/2.png)
-
-![](https://raw.githubusercontent.com/numbbbbb/the-swift-programming-language-in-chinese/gh-pages/swift%202.0%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87/3.png)
-
-![](https://raw.githubusercontent.com/numbbbbb/the-swift-programming-language-in-chinese/gh-pages/swift%202.0%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87/4.png)
-
-![](https://raw.githubusercontent.com/numbbbbb/the-swift-programming-language-in-chinese/gh-pages/swift%202.0%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87/5.png)
 
 在我没有任何回复的情况下，不到一天时间，有五位朋友报名。看到这些回复的时候我真的很惊讶，也很感动，无论这个项目存在多少问题，只要有人关注，有人愿意为它付出，那我还有什么理由放弃呢？
 
@@ -51,28 +48,29 @@
 
 下次你再打开这篇文档，可以多看看那些列在最上方的ID，哪怕不去follow和star，只是看一眼就好。他们的所有努力和付出，就存在于这短暂的一瞥中。
 
-Swift 2.0 参与者名单（按照章节顺序）：  
-- [xtymichael](https://github.com/xtymichael)     
-- [AlanMelody](https://github.com/AlanMelody)    
-- [DianQK](https://github.com/DianQK)  
-- [dreamkidd](https://github.com/dreamkidd)  
-- [100mango](https://github.com/100mango)  
-- [futantan](https://github.com/futantan)  
-- [SkyJean](https://github.com/SkyJean)  
-- [yangsiy](https://github.com/yangsiy)  
-- [shanksyang](https://github.com/shanksyang)  
-- [chenmingbiao](https://github.com/chenmingbiao)  
-- [Channe](https://github.com/Channe)  
-- [lyojo](https://github.com/lyojo)  
-- [SergioChan](https://github.com/SergioChan)  
-- [mmoaay](https://github.com/mmoaay)  
-- [buginux](https://github.com/buginux)  
-- [KYawn](https://github.com/KYawn)  
-- [EudeMorgen](https://github.com/EudeMorgen)  
-- [littledogboy](https://github.com/littledogboy)   
-- [Lenhoon](https://github.com/Lenhoon)   
-- [ray16897188](https://github.com/ray16897188)   
-- [wardenNScaiyi](https://github.com/wardenNScaiyi)  
-- [miaosiqi](https://github.com/miaosiqi)  
+Swift 2.0 参与者名单（按照章节顺序）：
+- [xtymichael](https://github.com/xtymichael)
+- [AlanMelody](https://github.com/AlanMelody)
+- [DianQK](https://github.com/DianQK)
+- [dreamkidd](https://github.com/dreamkidd)
+- [100mango](https://github.com/100mango)
+- [futantan](https://github.com/futantan)
+- [SkyJean](https://github.com/SkyJean)
+- [yangsiy](https://github.com/yangsiy)
+- [shanksyang](https://github.com/shanksyang)
+- [chenmingbiao](https://github.com/chenmingbiao)
+- [Channe](https://github.com/Channe)
+- [lyojo](https://github.com/lyojo)
+- [SergioChan](https://github.com/SergioChan)
+- [mmoaay](https://github.com/mmoaay)
+- [buginux](https://github.com/buginux)
+- [KYawn](https://github.com/KYawn)
+- [EudeMorgen](https://github.com/EudeMorgen)
+- [littledogboy](https://github.com/littledogboy)
+- [Lenhoon](https://github.com/Lenhoon)
+- [ray16897188](https://github.com/ray16897188)
+- [wardenNScaiyi](https://github.com/wardenNScaiyi)
+- [miaosiqi](https://github.com/miaosiqi)
+- [Realank](https://github.com/Realank)
 
-最后，感谢<a target='_blank' href="http://wiki.jikexueyuan.com/">极客学院</a>提供的wiki系统，在国内访问起来速度很快，优化后的样式看起来也更舒服。
+最后，感谢[极客学院](http://wiki.jikexueyuan.com)提供的wiki系统，在国内访问起来速度很快，优化后的样式看起来也更舒服。

@@ -8,6 +8,10 @@
 > 2.0
 > 翻译+校对：[xtymichael](https://github.com/xtymichael)
 
+> 2.1
+> 翻译：[Prayer](https://github.com/futantan)
+> 校对：[shanks](http://codebuild.me)，[overtrue](https://github.com/overtrue)
+
 本页包含内容：
 
 - [常量和变量](#constants_and_variables)
@@ -67,7 +71,7 @@ var currentLoginAttempt = 0
 
 这两行代码可以被理解为：
 
-“声明一个名字是`maximumNumberOfLoginAttempts`的新常量，并给它一个值`10`。然后，声明一个名字是`currentLoginAttempt`的变量并将它的值初始化为`0`.”
+“声明一个名字是`maximumNumberOfLoginAttempts`的新常量，并给它一个值`10`。然后，声明一个名字是`currentLoginAttempt`的变量并将它的值初始化为`0`。”
 
 在这个例子中，允许的最大尝试登录次数被声明为一个常量，因为这个值不会改变。当前尝试登录次数被声明为一个变量，因为每次尝试登录失败的时候都需要增加这个值。
 
@@ -172,7 +176,7 @@ print("The current value of friendlyWelcome is \(friendlyWelcome)")
 ## 注释
 请将你的代码中的非执行文本注释成提示或者笔记以方便你将来阅读。Swift 的编译器将会在编译代码时自动忽略掉注释部分。
 
-Swift 中的注释与C 语言的注释非常相似。单行注释以双正斜杠（`//`）作为起始标记:
+Swift 中的注释与 C 语言的注释非常相似。单行注释以双正斜杠（`//`）作为起始标记:
 
 ```swift
 // 这是一个注释
@@ -254,16 +258,16 @@ Swift 也提供了一个特殊的无符号类型`UInt`，长度与当前平台�
 * `Float`表示32位浮点数。精度要求不高的话可以使用此类型。
 
 > 注意：  
-`Double`精确度很高，至少有15位数字，而`Float`最少只有6位数字。选择哪个类型取决于你的代码需要处理的值的范围。
+`Double`精确度很高，至少有15位数字，而`Float`只有6位数字。选择哪个类型取决于你的代码需要处理的值的范围。
 
 <a name="type_safety_and_type_inference"></a>
 ## 类型安全和类型推断
 
-Swift 是一个类型安全（type safe）的语言。类型安全的语言可以让你清楚地知道代码要处理的值的类型。如果你的代码需要一个`String`，你绝对不可能不小心传进去一个`Int`。
+Swift 是一个*类型安全（type safe）*的语言。类型安全的语言可以让你清楚地知道代码要处理的值的类型。如果你的代码需要一个`String`，你绝对不可能不小心传进去一个`Int`。
 
-由于 Swift 是类型安全的，所以它会在编译你的代码时进行类型检查（type checks），并把不匹配的类型标记为错误。这可以让你在开发的时候尽早发现并修复错误。
+由于 Swift 是类型安全的，所以它会在编译你的代码时进行*类型检查（type checks）*，并把不匹配的类型标记为错误。这可以让你在开发的时候尽早发现并修复错误。
 
-当你要处理不同类型的值时，类型检查可以帮你避免错误。然而，这并不是说你每次声明常量和变量的时候都需要显式指定类型。如果你没有显式指定类型，Swift 会使用_类型推断_（type inference）来选择合适的类型。有了类型推断，编译器可以在编译代码的时候自动推断出表达式的类型。原理很简单，只要检查你赋的值即可。
+当你要处理不同类型的值时，类型检查可以帮你避免错误。然而，这并不是说你每次声明常量和变量的时候都需要显式指定类型。如果你没有显式指定类型，Swift 会使用*类型推断（type inference）*来选择合适的类型。有了类型推断，编译器可以在编译代码的时候自动推断出表达式的类型。原理很简单，只要检查你赋的值即可。
 
 因为有类型推断，和 C 或者 Objective-C 比起来 Swift 很少需要声明类型。常量和变量虽然需要明确类型，但是大部分工作并不需要你自己来完成。
 
@@ -299,10 +303,10 @@ let anotherPi = 3 + 0.14159
 
 整数字面量可以被写作：
 
-* 一个十进制数，没有前缀
-* 一个二进制数，前缀是`0b`
-* 一个八进制数，前缀是`0o`
-* 一个十六进制数，前缀是`0x`
+* 一个*十进制*数，没有前缀
+* 一个*二进制*数，前缀是`0b`
+* 一个*八进制*数，前缀是`0o`
+* 一个*十六进制*数，前缀是`0x`
 
 下面的所有整数字面量的十进制值都是`17`:
 
@@ -313,7 +317,7 @@ let octalInteger = 0o21           // 八进制的17
 let hexadecimalInteger = 0x11     // 十六进制的17
 ```
 
-浮点字面量可以是十进制（没有前缀）或者是十六进制（前缀是`0x`）。小数点两边必须有至少一个十进制数字（或者是十六进制的数字）。浮点字面量还有一个可选的指数（exponent，在十进制浮点数中通过大写或者小写的`e`来指定，在十六进制浮点数中通过大写或者小写的`p`来指定。
+浮点字面量可以是十进制（没有前缀）或者是十六进制（前缀是`0x`）。小数点两边必须有至少一个十进制数字（或者是十六进制的数字）。十进制浮点数也可以有一个可选的指数（exponent)，通过大写或者小写的 `e` 来指定；十六进制浮点数必须有一个指数，通过大写或者小写的 `p` 来指定。
 
 如果一个十进制数的指数为`exp`，那这个数相当于基数和10^exp的乘积：
 * `1.25e2` 表示 1.25 × 10^2，等于 `125.0`。
@@ -468,9 +472,9 @@ if i == 1 {
 <a name="tuples"></a>
 ## 元组
 
-元组（tuples）把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。
+*元组（tuples）*把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。
 
-下面这个例子中，`(404, "Not Found")`是一个描述 HTTP 状态码（HTTP status code）的元组。HTTP 状态码是当你请求网页的时候 web 服务器返回的一个特殊值。如果你请求的网页不存在就会返回一个`404 Not Found`状态码。
+下面这个例子中，`(404, "Not Found")`是一个描述 *HTTP 状态码（HTTP status code）*的元组。HTTP 状态码是当你请求网页的时候 web 服务器返回的一个特殊值。如果你请求的网页不存在就会返回一个`404 Not Found`状态码。
 
 ```swift
 let http404Error = (404, "Not Found")
@@ -531,7 +535,7 @@ print("The status message is \(http200Status.description)")
 <a name="optionals"></a>
 ## 可选类型
 
-使用可选类型（optionals）来处理值可能缺失的情况。可选类型表示：
+使用*可选类型（optionals）*来处理值可能缺失的情况。可选类型表示：
 
 * 有值，等于 x
 
@@ -542,7 +546,7 @@ print("The status message is \(http200Status.description)")
 > 注意：  
 C 和 Objective-C 中并没有可选类型这个概念。最接近的是 Objective-C 中的一个特性，一个方法要不返回一个对象要不返回`nil`，`nil`表示“缺少一个合法的对象”。然而，这只对对象起作用——对于结构体，基本的 C 类型或者枚举类型不起作用。对于这些类型，Objective-C 方法一般会返回一个特殊值（比如`NSNotFound`）来暗示值缺失。这种方法假设方法的调用者知道并记得对特殊值进行判断。然而，Swift 的可选类型可以让你暗示_任意类型_的值缺失，并不需要一个特殊值。
 
-来看一个例子。Swift 的`String`类型有一种构造器，作用是将一个`String`值转换成一个`Int`值。然而，并不是所有的字符串都可以转换成一个整数。字符串`"123"`可以被转换成数字`123`，但是字符串`"hello, world"`不行。
+来看一个例子。Swift 的`Int`类型有一种构造器，作用是将一个`String`值转换成一个`Int`值。然而，并不是所有的字符串都可以转换成一个整数。字符串`"123"`可以被转换成数字`123`，但是字符串`"hello, world"`不行。
 
 下面的例子使用这种构造器来尝试将一个`String`转换成`Int`：
 
@@ -552,7 +556,7 @@ let convertedNumber = Int(possibleNumber)
 // convertedNumber 被推测为类型 "Int?"， 或者类型 "optional Int"
 ```
 
-因为该构造器可能会失败，所以它返回一个_可选类型_（optional）`Int`，而不是一个`Int`。一个可选的`Int`被写作`Int?`而不是`Int`。问号暗示包含的值是可选类型，也就是说可能包含`Int`值也可能不包含值。（不能包含其他任何值比如`Bool`值或者`String`值。只能是`Int`或者什么都没有。）
+因为该构造器可能会失败，所以它返回一个_可选类型_（optional）`Int`，而不是一个`Int`。一个可选的`Int`被写作`Int?`而不是`Int`。问号暗示包含的值是可选类型，也就是说可能包含`Int`值也可能*不包含值*。（不能包含其他任何值比如`Bool`值或者`String`值。只能是`Int`或者什么都没有。）
 
 <a name="nil"></a>
 ### nil
@@ -592,7 +596,7 @@ if convertedNumber != nil {
 }
 // 输出 "convertedNumber contains some integer value."
 ```
-当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（`!`）来获取值。这个惊叹号表示“我知道这个可选有值，请使用它。”这被称为可选值的_强制解析_（forced unwrapping）：
+当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（`!`）来获取值。这个惊叹号表示“我知道这个可选有值，请使用它。”这被称为可选值的_强制解析（forced unwrapping）_：
 
 ```swift
 if convertedNumber != nil {
@@ -609,7 +613,7 @@ if convertedNumber != nil {
 <a name="optional_binding"></a>
 ### 可选绑定
 
-使用可选绑定（optional binding）来判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。可选绑定可以用在`if`和`while`语句中来对可选类型的值进行判断并把值赋给一个常量或者变量。`if`和`while`语句，请参考[控制流](./05_Control_Flow.html)。
+使用*可选绑定（optional binding）*来判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。可选绑定可以用在`if`和`while`语句中，这条语句不仅可以用来判断可选类型中是否有值，同时可以将可选类型中的值赋给一个常量或者变量。`if`和`while`语句，请参考[控制流](./05_Control_Flow.html)。
 
 像下面这样在`if`语句中写一个可选绑定：
 
@@ -619,7 +623,7 @@ if let constantName = someOptional {
 }
 ```
 
-你可以像上面这样使用可选绑定来重写`possibleNumber`这个例子：
+你可以像上面这样使用可选绑定来重写`possibleNumber`这个[例子](./01_The_Basics.html#optionals)：
 
 ```swift
 if let actualNumber = Int(possibleNumber) {
@@ -634,16 +638,17 @@ if let actualNumber = Int(possibleNumber) {
 
 “如果`Int(possibleNumber)`返回的可选`Int`包含一个值，创建一个叫做`actualNumber`的新常量并将可选包含的值赋给它。”
 
-如果转换成功，`actualNumber`常量可以在`if`语句的第一个分支中使用。它已经被可选类型_包含的_值初始化过，所以不需要再使用`!`后缀来获取它的值。在这个例子中，`actualNumber`只被用来输出转换结果。
+如果转换成功，`actualNumber`常量可以在`if`语句的第一个分支中使用。它已经被可选类型 _包含的_ 值初始化过，所以不需要再使用`!`后缀来获取它的值。在这个例子中，`actualNumber`只被用来输出转换结果。
 
 你可以在可选绑定中使用常量和变量。如果你想在`if`语句的第一个分支中操作`actualNumber`的值，你可以改成`if var actualNumber`，这样可选类型包含的值就会被赋给一个变量而非常量。
 
-多个可选绑定可以用逗号分隔，作为一列表达式出现在一个`if`语句中。
+你可以包含多个可选绑定在`if`语句中，并使用`where`子句做布尔值判断。
 
 ```swift
-if let constantName = someOptional, anotherConstantName = someOtherOptional {
-    statements
+if let firstNumber = Int("4"), secondNumber = Int("42") where firstNumber < secondNumber {
+    print("\(firstNumber) < \(secondNumber)")
 }
+// prints "4 < 42"
 ```
 
 <a name="implicityly_unwrapped_optionals"></a>
@@ -695,14 +700,14 @@ if let definiteString = assumedString {
 
 <a name="error_handling"></a>
 ## 错误处理
-你可以使用错误处理(error handling)来应对程序执行中可能会遇到的错误条件。
+你可以使用*错误处理（error handling）*来应对程序执行中可能会遇到的错误条件。
 
 相对于可选中运用值的存在与缺失来表达函数的成功与失败，错误处理可以推断失败的原因，并传播至程序的其他部分。
 
 当一个函数遇到错误条件，它能报错。调用函数的地方能抛出错误消息并合理处理。
 
 ```swift
-func canThrowAnErrow() throws {
+func canThrowAnError() throws {
     // 这个函数有可能抛出错误
 }
 ```
@@ -711,7 +716,7 @@ func canThrowAnErrow() throws {
 
 ```swift
 do {
-    try canThrowAnErrow()
+    try canThrowAnError()
     // 没有错误消息抛出
 } catch {
     // 有一个错误消息抛出
@@ -746,7 +751,7 @@ do {
 <a name="assertions"></a>
 ## 断言
 
-可选类型可以让你判断值是否存在，你可以在代码中优雅地处理值缺失的情况。然而，在某些情况下，如果值缺失或者值并不满足特定的条件，你的代码可能没办法继续执行。这时，你可以在你的代码中触发一个断言（assertion）来结束代码运行并通过调试来找到值缺失的原因。
+可选类型可以让你判断值是否存在，你可以在代码中优雅地处理值缺失的情况。然而，在某些情况下，如果值缺失或者值并不满足特定的条件，你的代码可能没办法继续执行。这时，你可以在你的代码中触发一个*断言（assertion）*来结束代码运行并通过调试来找到值缺失的原因。
 
 ### 使用断言进行调试
 
@@ -754,7 +759,7 @@ do {
 
 如果你的代码在调试环境下触发了一个断言，比如你在 Xcode 中构建并运行一个应用，你可以清楚地看到不合法的状态发生在哪里并检查断言被触发时你的应用的状态。此外，断言允许你附加一条调试信息。
 
-你可以使用全局`assert(_:_:)`函数来写一个断言。向`assert(_:_:)`函数传入一个结果为`true`或者`false`的表达式以及一条信息，当表达式的结果为`false`的时候这条信息会被显示：
+你可以使用全局`assert(_:_file:line:)`函数来写一个断言。向这个函数传入一个结果为`true`或者`false`的表达式以及一条信息，当表达式的结果为`false`的时候这条信息会被显示：
 
 ```swift
 let age = -3
@@ -770,15 +775,20 @@ assert(age >= 0, "A person's age cannot be less than zero")
 assert(age >= 0)
 ```
 
+> 注意：  
+当代码使用优化编译的时候，断言将会被禁用，例如在 Xcode 中，使用默认的 target Release 配置选项来 build 时，断言会被禁用。
+
 ### 何时使用断言
 
 当条件可能为假时使用断言，但是最终一定要_保证_条件为真，这样你的代码才能继续运行。断言的适用情景：
 
-* 整数类型的下标索引被传入一个自定义下标脚本实现，但是下标索引值可能太小或者太大。
+* 整数类型的下标索引被传入一个自定义下标实现，但是下标索引值可能太小或者太大。
 * 需要给函数传入一个值，但是非法的值可能导致函数不能正常执行。
 * 一个可选值现在是`nil`，但是后面的代码运行需要一个非`nil`值。
 
-请参考[下标脚本](./12_Subscripts.html)和[函数](./06_Functions.html)。
+请参考[下标](./12_Subscripts.html)和[函数](./06_Functions.html)。
 
 > 注意：  
 断言可能导致你的应用终止运行，所以你应当仔细设计你的代码来让非法条件不会出现。然而，在你的应用发布之前，有时候非法条件可能出现，这时使用断言可以快速发现问题。
+
+
